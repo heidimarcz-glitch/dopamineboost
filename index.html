@@ -638,7 +638,7 @@ async function buildPlaylist() {
 
     const res = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
-      headers: {"Content-Type":"application/json"},
+      headers: {"Content-Type":"application/json", "x-api-key": "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", "anthropic-version": "2023-06-01"},
       body: JSON.stringify({
         model: "claude-sonnet-4-20250514",
         max_tokens: 8000,
